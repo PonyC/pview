@@ -10,18 +10,18 @@
     props:{
       type:{
         type:String,
-        default:(val)=>{
+        validator: (val) =>{
           const map = ['default','primary']
           return map.includes(val) ? val:'primary'
         }
       },
       size:{
         type:String,
-        default:(val)=>{
+        validator:(val)=>{
           const map = ['small','normal','large']
           return map.includes(val) ? val:'normal'
         }
-      },
+      }
     },
     data(){
       return{
