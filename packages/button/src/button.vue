@@ -10,6 +10,7 @@
     props:{
       type:{
         type:String,
+        default:'default',
         validator: (val) =>{
           const map = ['default','primary']
           return map.includes(val) ? val:'primary'
@@ -17,6 +18,7 @@
       },
       size:{
         type:String,
+        default:'normal',
         validator:(val)=>{
           const map = ['small','normal','large']
           return map.includes(val) ? val:'normal'
