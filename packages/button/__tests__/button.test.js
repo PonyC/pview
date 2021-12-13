@@ -1,9 +1,9 @@
-import button from '../src/button.vue'
+import pButton from '../src/button.vue'
 import { mount } from '@vue/test-utils'
 
-describe('p-button',()=>{
+describe('pButton',()=>{
   test('isButton',()=>{
-    const wrapper = mount(button,{
+    const wrapper = mount(pButton,{
       propsData:{
         type:'primary',
         size:'normal'

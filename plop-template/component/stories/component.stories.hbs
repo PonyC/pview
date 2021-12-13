@@ -1,0 +1,18 @@
+import p{{properCase name}} from '../src/{{name}}.vue';
+
+export default {
+  title: 'p{{properCase name}}',
+  component: p{{properCase name}},
+};
+
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { p{{properCase name}} },
+  template: `
+    <div>
+      <p-{{name}} v-bind="$props"></p-{{name}}>
+    </div>
+  `,
+});
+
+export const {{properCase name}} = Template.bind({});

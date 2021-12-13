@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name:'PButton',
+    name:'pButton',
     props:{
       type:{
         type:String,
